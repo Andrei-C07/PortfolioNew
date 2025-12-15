@@ -1,0 +1,96 @@
+/* About me styling */
+.about-me {
+  position: relative;
+  z-index: 1;
+  width: 850px;
+  height: 650px;
+  padding: 110px;
+  background: url("/menuBackground.png") center / cover no-repeat;
+  text-align: center;
+}
+
+.general {
+  display: flex;
+  flex-direction: row;
+  border-width: 2px;
+  align-items: center;
+  width: 630px;
+  height: 340px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: #000000;
+  padding: 10px;
+}
+
+.skills {
+  border-width: 2px;
+  width: 630px;
+  height: 95px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: #000000;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.skill-list {
+  margin-top: 5px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-color: beige;
+  border: #000000; 
+  border-style: solid;
+  border-width: 2px;
+
+}
+
+.bio{
+  width: 550px;
+  height: 330px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: #000000;
+}
+
+.bio-list {
+  margin-top: 10px;
+  list-style: none;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.bio-list-item {
+  padding: 12px 16px;
+  font-size: 11px;
+}
+
+.info{
+  font-size: 12px;
+}
+
+.profile-pic{
+  height: 100px;
+  width: 100px;
+  border: #000000;
+  border-style: solid;
+  border-radius: 1cap;
+  border-width: 2px;
+  object-fit: cover; 
+  margin-bottom: 20px;
+}
+
+.back_button{
+  display: flex;
+  justify-content: left;
+  font-size: 14px;
+  color: #000000;
+  cursor: pointer;
+}

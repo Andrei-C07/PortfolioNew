@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { use, useEffect, useState } from "react";
-import "./App.css";
+import "./styles/App.css";
 import { useNavigate } from "react-router-dom";
 
 const items = ["About me", "Projects", "Experience", "Contact"];
@@ -72,6 +72,7 @@ export default function App() {
     },
     Contact: () => {
       console.log("Navigating to Contact");
+      navigate("/contact");
     },
   };
     
@@ -105,7 +106,7 @@ export default function App() {
                     animate={activeIndex === index ? "active" : "rest"}
                     transition={{ duration: 0.15 }}
                   >
-                    ▶
+                    {">"}
                   </motion.span>
 
                   {item}

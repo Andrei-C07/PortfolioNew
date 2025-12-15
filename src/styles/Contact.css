@@ -1,0 +1,110 @@
+.contact {
+  position: relative;
+  z-index: 1;
+  width: 850px;
+  height: 650px;
+  padding: 110px;
+  background: url("/menuBackground.png") center / cover no-repeat;
+  text-align: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  background: rgba(0, 0, 0, 0.35);
+  border: 2px solid #000;
+  box-shadow:
+    0 0 0 2px #ff9900 inset,
+    6px 6px 0 #000;
+
+  font-family: inherit;
+}
+
+.horiDiv {
+  display: flex;
+  gap: 12px;
+}
+
+.horiDiv input {
+  flex: 1;
+}
+
+
+.form input,
+.form textarea {
+  background: #f7ebc6;
+  color: #000000;
+
+  border: 2px solid #000;
+  padding: 10px 12px;
+
+  font-size: 12px;
+  font-family: inherit;
+
+  outline: none;
+}
+
+.form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #ff9900;
+  box-shadow: 0 0 8px rgba(255, 153, 0, 0.6);
+}
+
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #aaa;
+  opacity: 0.8;
+}
+
+.divbtn {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+
+.form button {
+  flex: 1;
+
+  padding: 10px 0;
+  background: #7a7a7a;
+  color: #fff;
+
+  border: 2px solid #000;
+  font-family: inherit;
+  font-size: 14px;
+
+  cursor: pointer;
+
+  box-shadow: 4px 4px 0 #ff9900;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.form button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #ff9900;
+}
+
+.back {
+  display: flex;
+  width: 600px;
+  justify-content: left;
+  font-size: 14px;
+  color: #000000;
+  cursor: pointer;
+  margin-top: 10px;
+}
