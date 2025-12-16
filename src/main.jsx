@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import App from "./App.jsx";
 import AboutMe from "./AboutMe.jsx";
 import Contact from "./Contact.jsx";
-import "./styles/index.css";
 import Projects from "./Projects.jsx";
 import Experience from "./Experience.jsx";
+import "./styles/index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<AboutMe />} />
@@ -18,6 +18,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/experience" element={<Experience />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
