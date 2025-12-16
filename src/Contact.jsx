@@ -8,12 +8,10 @@ export default function Contact() {
   const navigate = useNavigate();
   const form = useRef();
 
-  // Only 3 navigable elements
   const backRef = useRef();
   const sendRef = useRef();
   const clearRef = useRef();
 
-  // 0 = Back, 1 = Send, 2 = Clear
   const elements = [backRef, sendRef, clearRef];
   const [selected, setSelected] = useState(0);
 

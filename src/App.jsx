@@ -66,9 +66,11 @@ export default function App() {
     },
     Projects: () => {
       console.log("Navigating to Projects");
+      navigate("/projects");
     },
     Experience: () => {
       console.log("Navigating to Experience");
+      navigate("/experience");
     },
     Contact: () => {
       console.log("Navigating to Contact");

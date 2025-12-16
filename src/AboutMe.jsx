@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import "./styles/AboutMe.css";
 import { useNavigate } from "react-router-dom";
-
+import cv from "/Resume_AndreiCretu.pdf";
 const flicker = {
   animate: {
     color: ["#ff8c00", "#ffa500", "#ff8c00"],
@@ -96,13 +96,12 @@ export default function AboutMe() {
                 <br />
                 <br />
                 <motion.div
-                  className="no-style"
                   variants={itemVariants}
                   initial="rest"
                   animate={selected === 1 ? "active" : "rest"}
                   onMouseEnter={() => setSelected(1)}
                 >
-                  Download CV
+                  <a href={cv} target="_blank" className="cv">Download CV</a>
                 </motion.div>
               </div>             
             </div>
@@ -118,7 +117,7 @@ export default function AboutMe() {
                 <li>
                   <div>Education
                     <ul>
-                      <li className="bio-list-item">Studying computer science at Gérald-Godin Cégep. Expected graduation : may 2026.</li>
+                      <li className="bio-list-item">Studying computer science at Cégep Gérald-Godin. Expected graduation : may 2026.</li>
                     </ul>
                   </div>
                 </li>

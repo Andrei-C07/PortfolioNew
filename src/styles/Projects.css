@@ -1,0 +1,97 @@
+.projects-page {
+  height: 100vh;              
+  padding: 4rem 6rem;
+  background: url("/background.jpg") center / cover no-repeat;
+  overflow: hidden;           
+}
+
+
+.projects-title {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  justify-items: center;
+
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 2rem;
+}
+
+.project-card {
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  padding: 80px;
+  width: 580px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-card h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.project-card p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.projects-back {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: white;
+  z-index: 10;
+}
+
+.projects-back.selected {
+  color: orange;
+  text-shadow:
+    0 0 5px rgba(255, 165, 0, 0.8),
+    0 0 10px rgba(255, 165, 0, 0.6);
+}
+
+.project-image {
+  border: black 2px solid;
+  width: 80%;
+  height: auto;
+}
+
+.project-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 170px;
+  /* border: black 2px solid; */
+  padding: 10px;
+}
+
+.desc {
+  font-size: 12px;
+  margin-top: 8px;
+}   
+
+.hint {
+  font-size: 10px;
+  margin-top: 8px;
+}
+
+.project-card h3 {
+  margin-bottom: 1rem;
+}
