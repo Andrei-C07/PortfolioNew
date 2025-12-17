@@ -2,7 +2,19 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import "./styles/AboutMe.css";
 import { useNavigate } from "react-router-dom";
-import cv from "/Resume_AndreiCretu.pdf";
+
+import cv from "./assets/Resume_AndreiCretu.pdf";
+
+import me from "./assets/me.png";
+import java from "./assets/java.png";
+import python from "./assets/python.png";
+import sql from "./assets/sql.png";
+import cs from "./assets/cs.png";
+import reactLogo from "./assets/react.png";
+import github from "./assets/github.png";
+import docker from "./assets/docker.png";
+
+
 const flicker = {
   animate: {
     color: ["#ff8c00", "#ffa500", "#ff8c00"],
@@ -83,7 +95,7 @@ export default function AboutMe() {
                 {"<"}Back
               </motion.div>
               <div>
-                <img src="/me.png" alt="profile" className="profile-pic" />
+                <img src={me} alt="profile" className="profile-pic" />
               </div>
               <div>
                 <span className="info">Andrei Cretu</span>
@@ -141,13 +153,13 @@ export default function AboutMe() {
           <div className="skills">
             Skills
             <div className="skill-list">
-              <img src="/java.png" alt="java" className="skill-icon" />
-              <img src="/python.png" alt="python" className="skill-icon" />
-              <img src="/sql.png" alt="sql" className="skill-icon" />
-              <img src="/cs.png" alt="c#" className="skill-icon" />
-              <img src="/react.png" alt="react" className="skill-icon" />
-              <img src="/github.png" alt="github" className="skill-icon" />
-              <img src="/docker.png" alt="docker" className="skill-icon" />
+              <img src={java} alt="java" className="skill-icon" />
+              <img src={python} alt="python" className="skill-icon" />
+              <img src={sql} alt="sql" className="skill-icon" />
+              <img src={cs} alt="c#" className="skill-icon" />
+              <img src={reactLogo} alt="react" className="skill-icon" />
+              <img src={github} alt="github" className="skill-icon" />
+              <img src={docker} alt="docker" className="skill-icon" />
             </div>
           </div>
         </div>
