@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "./styles/AboutMe.css";
 import { useNavigate } from "react-router-dom";
 
-import cv from "./assets/Resume_AndreiCretu.pdf";
+import cv from "./assets/Resume_AndreiCretu_Dev.pdf";
 
 import me from "./assets/me.png";
 import java from "./assets/java.png";
