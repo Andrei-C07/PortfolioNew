@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "./styles/AboutMe.css";
 import { useNavigate } from "react-router-dom";
 
-import cv from "./assets/Resume_AndreiCretu_Dev.pdf";
+import cv from "./assets/Resume_AndreiCretuDev.pdf";
 
 import me from "./assets/me.png";
 import java from "./assets/java.png";
@@ -113,7 +113,7 @@ export default function AboutMe() {
                   animate={selected === 1 ? "active" : "rest"}
                   onMouseEnter={() => setSelected(1)}
                 >
-                  <a href={cv} target="_blank" className="cv">Download CV</a>
+                  <a href={cv} rel="noopener noreferrer" className="cv">Download CV</a>
                 </motion.div>
               </div>             
             </div>
