@@ -18,7 +18,7 @@ const jobs = [
     where: "ClearView, Montreal, QC",
     description:
       "Co-founded a business offering window and gutter cleaning as well as other primarily residential services. Managed job sites, customer relations, and scheduling.",
-    date: "From : 2024 - 2025",
+    date: "From : 2024 - 2026",
   },
 ];
 
