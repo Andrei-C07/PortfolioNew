@@ -7,6 +7,7 @@ import menuBackground from "./assets/menuBackground.png";
 import microblog from "./assets/microblog.png";
 import projetweb from "./assets/projetweb.png";
 import portfolio from "./assets/portfolio.png";
+import tcode from "./assets/tcode.png";
 
 const projects = [
   {
