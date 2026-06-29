@@ -10,11 +10,11 @@ import portfolio from "./assets/portfolio.png";
 
 const projects = [
   {
-    image: microblog,
-    title: "Microblog",
+    image: tcode,
+    title: "TCode",
     description:
-      "A minimalist micro-blogging app built with Expo for mobile and web, featuring real-time posts, user follow system, filters, pagination, and authentication.",
-    link: "https://github.com/alexandru356/microblog.git",
+      "CLI-first DSA practice tool with a built-in AI tutor. LeetCode problems, any editor, zero browser.",
+    link: "https://github.com/alexciuca/tcode.git",
   },
   {
     image: projetweb,
