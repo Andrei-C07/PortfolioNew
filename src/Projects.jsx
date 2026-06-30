@@ -8,13 +8,14 @@ import microblog from "./assets/microblog.png";
 import projetweb from "./assets/projetweb.png";
 import portfolio from "./assets/portfolio.png";
 import tcode from "./assets/tcode.png";
+import clearview from "./assets/clearview.png";
 
 const projects = [
   {
     image: tcode,
     title: "TCode",
     description:
-      "CLI-first DSA practice tool with a built-in AI tutor. LeetCode problems, any editor, zero browser.",
+      "CLI-first DSA practice tool with a built-in AI tutor. LeetCode problems, any editor, zero browser. (Open source)",
     link: "https://github.com/alexciuca/tcode.git",
   },
   {
@@ -23,6 +24,13 @@ const projects = [
     description:
       "C#, Entity Framework application for managing DVD collections with user authentication and lending features.",
     link: "https://github.com/Jawadbouchiba/ProjetFinalWebServeurII.git",
+  },
+  {
+    image: clearview,
+    title: "ClearView",
+    description:
+      "Website for a window cleaning company, built with React and Next.js, featuring a responsive design and contact form. (Closed source)",
+    link: "https://github.com/Andrei-C07/ClearView.git",
   },
   {
     image: portfolio,
